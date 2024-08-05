@@ -65,10 +65,10 @@ df = pd.DataFrame(data)
 
 # Connect to the MySQL database
 db_config = {
-    "host": "mysql",
-    "user": "root",
-    "password": "debezium",
-    "database": "inventory"
+     "host": "localhost",   # Change to your MySQL server host
+    "user": "root",        # Change to your MySQL username
+    "password": "root",# Change to your MySQL password
+    "database": "inventory"# Change to your MySQL database name
 }
 conn = mysql.connector.connect(**db_config)
 
